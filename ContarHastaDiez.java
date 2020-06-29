@@ -7,7 +7,7 @@ public class ContarHastaDiez {
     //por hacer: que el usuario digite el limite y que muestre la suma de la sec
 
     public static void main(String args[]){
-        limite =20;
+        limite =30;
         int contador = 0;
         while(contador <= limite){
             System.out.println(contador);
