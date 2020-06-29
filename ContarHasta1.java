@@ -8,7 +8,7 @@ public class ContarHasta1 {
 
     public static void main(String args[]){
         limite =20;
-        while(limite == 1){
+        while(limite == 0){
             System.out.println(limite);
             limite--;
         }//fin de while
