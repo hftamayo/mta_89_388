@@ -48,5 +48,17 @@ public class Inventario{
         else{
             System.out.println("Estado de la U de Medida: DESHABILITADA");        
         }
+        //finalizacion de la captura de datos de Unidad de Medida
+
+        //inicio de la captura de datos de Lineas
+        System.out.println("Agregacion de una nueva linea de productos");
+        System.out.println("Digite el nombre de la linea:");
+        //POR HACER: depurar la entrada de datos para capturar el nombre
+        nombre = entradaDatos.nextLine();
+        Lineas nlinea = new Lineas(nombre);
+        System.out.println("Los datos ha sido registrados: ");
+        System.out.println("Nombre de la Linea: " +nlinea.getNombreLinea());
+        // por hacer: finalizar el proceso de captura de datos de toda la clase linea
+
     }//fin del metodo main
 }//fin de la clase inventario
