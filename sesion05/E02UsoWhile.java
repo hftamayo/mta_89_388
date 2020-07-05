@@ -28,14 +28,19 @@ public class E02UsoWhile{
             //4. poner a cero nuevamente la variable seleccion ya que nuevamente se va a usar
             decision = 0;
             //5. preguntar al usuario si desea continuar
+            break;
+/*
             System.out.println("Si desea salir del programa presione cero");
             decision = Integer.parseInt(entradaDatos.nextLine());
             //6. evaluar la seleccion del usuario
+
             if(decision == 0){
                 //nos ahorramos el uso de una variable
                 System.out.println("El programa va a finalizar");
                 break;
             }
+            */
         }//fin de while
+        System.out.println("Se ejecuto break, el programa ha finalizado");
     }//fin del metodo main
 }

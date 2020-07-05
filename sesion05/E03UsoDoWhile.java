@@ -37,5 +37,6 @@ public class E03UsoDoWhile{
                 break;
             }
         }while(true);//fin de do while, la condicion se evalua al final
+        System.out.println("Se ejecuto break, el programa se va a finalizar");
     }//fin del metodo main
 }

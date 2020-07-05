@@ -23,7 +23,7 @@ public class E01UsoWhile{
             System.out.println("Digite el numero que corresponde a la opcion que desea ver: ");
             //2. captura de la decision del usuario
             decision = Integer.parseInt(entradaDatos.nextLine());
-            //POR HACER: VALIDAR QUE EL USUARIO UNICAMENTE DIGITE VALORES ENTRE 1 Y 3
+            //POR HACER: VALIDAR QUE EL USUARIO UNICAMENTE DIGITE VALORES ENTRE 1 Y 4
             //3. desplegar la opcion seleccionada
             System.out.println("La opcion que Ud. selecciono es: " + decision);
             //4. poner a cero nuevamente la variable seleccion ya que nuevamente se va a usar

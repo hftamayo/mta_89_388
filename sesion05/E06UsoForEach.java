@@ -8,10 +8,12 @@ public class E06UsoForEach {
     public static void main(String args[]){
         System.out.println("Programa para determinar la mayor calificacion");
         //Estructura de datos tipo arreglo
-        int[] calificaciones = { 125, 132, 300, 116, 110 }; 
+        int[] calificaciones = { 125, 1320, 300, 1116, 500 }; 
         int mayorCalificacionEvaluada = calificaciones[0];
         //uso de la E de Contro for each
         for(int calificacionEvaluada : calificaciones){
+            //mostrar los valores que se estan evaluando
+            System.out.println(calificacionEvaluada);
             if(calificacionEvaluada > mayorCalificacionEvaluada){
                 mayorCalificacionEvaluada = calificacionEvaluada;
             }
