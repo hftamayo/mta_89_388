@@ -19,13 +19,13 @@ public class E08UsoIfAnidado {
         int C = entradaDatos.nextInt();
         System.out.println("Ingrese el cuarto numero ");
         int D = entradaDatos.nextInt();
-        if(A > B && A > C && A > D){
+        if(A >= B && A >= C && A >= D){
             numeroMayor=A;
         }else{
-            if(B > A && B > C && B > D){
+            if(B >= A && B >= C && B >= D){
                 numeroMayor=B;
             }else{
-                if(C > A && C > B && C > D){
+                if(C >=A && C >= B && C >= D){
                     numeroMayor=C;
                 }else
                     numeroMayor=D;
