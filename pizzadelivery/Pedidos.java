@@ -24,11 +24,9 @@ public class Pedidos {
             int decision = Integer.parseInt(entradaTeclado.nextLine());
             switch(decision){
                 case 1: //agregar cliente
-                //POR HACER: EVALUAR EL MEJOR MECANISMO PARA CAPTURAR DATOS
-                //Y CREAR INSTANCIA DE CADA CLASE
                 Cliente nuevoCliente = new Cliente();
-                nuevoCliente.capturarDatos();
                 break;
+                
 
                 case 2: //agregar producto
                 //POR HACER: EVALUAR EL MEJOR MECANISMO PARA CAPTURAR DATOS
@@ -44,14 +42,18 @@ public class Pedidos {
                 default:
                  System.out.println("Digite un numero entre 1 y 3");
                  break;
+                 
             }
 
             System.out.println("Si desea continuar escriba continuar: ");
-            String continuar = entradaTeclado.nextLine();
-            if(continuar == "continuar"){
-                //y aca que pongo?
-            }
-            else{
+            String decidir = entradaTeclado.nextLine();
+            /*
+            intepretacion de la linea 55:
+            si el contenido de la variable decidir ES DIFERENTE DE continuar entonces finalice
+            caso contrario siga el ciclo
+            */
+            if(!decidir.equals("continuar")){
+                //entradaTeclado.close();
                 break;
             }
         }while(true);

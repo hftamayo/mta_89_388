@@ -4,6 +4,7 @@ controla todas las opciones del menu disponible
 
 package pizzadelivery;
 
+import java.util.Scanner;
 
 public class Menu {
     private int codigoEspecialidad;
@@ -19,6 +20,11 @@ public class Menu {
         this.descripcionEspecialidad = descripcionEspecialidad;
         this.precioEspecialidad = precioEspecialidad;
         this.tamanoEspecialidad = tamanoEspecialidad;
+    }
+
+    //sobrecarga del constructor
+    public Menu(){
+        capturaDatos();
     }
 
     public int getCodigoEspecialidad() {
@@ -60,4 +66,31 @@ public class Menu {
     public void setTamanoEspecialidad(String tamanoEspecialidad) {
         this.tamanoEspecialidad = tamanoEspecialidad;
     }
+
+    public void capturaDatos(){
+        //gestiona el proceso de entrada de datos de un nuevo cliente
+        //definir la variable entradaTeclado como variable de metodo
+        //puesto que en ninguna otra parte de la clase se va a requerir usarse
+        Scanner entradaTeclado = new Scanner(System.in);
+
+        System.out.println("Proceso para captura de datos de una nueva especialidad:");
+        
+        System.out.println("Por favor digite el codigo de la especialidad: ");
+        this.setCodigoEspecialidad(Integer.parseInt(entradaTeclado.nextLine()));
+
+        System.out.println("Por favor digite el nombre de la especialidad: ");        
+        this.setNombreEspecialidad(entradaTeclado.nextLine());
+
+        System.out.println("Por favor digite la descripcion de la Especialiad: ");        
+        this.setDescripcionEspecialidad(entradaTeclado.nextLine());
+
+        System.out.println("Por favor digite el precio de la especialidad: ");        
+        this.setPrecioEspecialidad(Float.parseFloat(entradaTeclado.nextLine()));
+
+        System.out.println("Por favor digite el tamano de la especialidad: ");        
+        this.setTamanoEspecialidad(entradaTeclado.nextLine());        
+
+        //es muy importante cerrar los objetos Scanner una vez que han dejado de usarse
+        entradaTeclado.close();
+    }   
 }
