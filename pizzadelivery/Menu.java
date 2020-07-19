@@ -7,10 +7,16 @@ package pizzadelivery;
 import java.util.Scanner;
 
 public class Menu {
+    /*
+    ejemplo de variable estatica que sera usada por un metodo estatico de clase
+    */
+    private static Double descuentoPermitido = 0.15;
+
+
     private int codigoEspecialidad;
     private String nombreEspecialidad;
     private String descripcionEspecialidad;
-    private float precioEspecialidad;
+    protected float precioEspecialidad;
     private String tamanoEspecialidad;
 
     public Menu(int codigoEspecialidad, String nombreEspecialidad, String descripcionEspecialidad,
@@ -67,7 +73,7 @@ public class Menu {
         this.tamanoEspecialidad = tamanoEspecialidad;
     }
 
-    public void capturaDatos(){
+    public final void capturaDatos(){
         //gestiona el proceso de entrada de datos de un nuevo cliente
         //definir la variable entradaTeclado como variable de metodo
         //puesto que en ninguna otra parte de la clase se va a requerir usarse
@@ -89,8 +95,21 @@ public class Menu {
 
         System.out.println("Por favor digite el tamano de la especialidad: ");        
         this.setTamanoEspecialidad(entradaTeclado.nextLine());        
+        System.out.println("------------------------------------------------------");
+        System.out.println();
 
         //es muy importante cerrar los objetos Scanner una vez que han dejado de usarse
         entradaTeclado.close();
-    }   
+    }   //fin del metodo capturaDatos
+
+    private static hacerEfectivoDescuento(descuentoPermitido){
+        if(this.getPrecioEspecialidad > 20){
+            descuentoPermitido = 0.25;
+            //calcular monto a pagar
+        }
+        else{
+            //calcularmonto a pagar con el descuento estandar
+
+        }
+    }
 }

@@ -80,6 +80,8 @@ public class Cliente {
         this.setTelMovilCliente(entradaTeclado.nextLine());
 
         //es muy importante cerrar los objetos Scanner una vez que han dejado de usarse
+        System.out.println("Se ha finalizado de capturar datos de un nuevo cliente");
+        System.out.println("------------------------------------------------------");
         entradaTeclado.close();
     }
 

@@ -1,0 +1,24 @@
+INSTRUCTOR:
+-Modulo de POS (Point of Sale)	Back Office
+  -gestion del inventario
+  -gestion de catalogos (productos disponiobles, proveedores)
+  -menu
+  -compras y ventas
+  -facturacion
+
+
+EQUIPO DE TRABAJO:
+-Modulo de delivery
+  1. administraction de: nuevos pedidos, nuevo cliente, direcciones del cliente (personal, familiares, trabajo), rastreo del pedido (preparacion, envio, entrega)
+  
+   2. administracion de personal de delivery y sucursales
+
+   3. servicios post venta(control de calidad de la satisfaccion del cliente) 
+   
+   EN AMBOS CASOS APLICAR:
+   modificadores a acceso a propiedades y metodos
+   clases agrupadas por paquetes
+   propiedades de tipo constante
+   metodos estaticos
+   variables estaticas
+   estructuras de control de distintos tipos

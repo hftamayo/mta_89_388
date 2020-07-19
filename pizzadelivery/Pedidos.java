@@ -13,6 +13,12 @@ package pizzadelivery;
 import java.util.Scanner;
 
 public class Pedidos {
+    /* ejemplo de valores constantes dentro del giro del negocio
+    deben ser declarados como final*/
+    private static final Double montoIVA = 0.13;
+    private final String nitNegocio = "0614-010101-111-5";
+    private final String numeroCallCenterNegocio = "2257-7777";
+
     public static void main(String args[]){
         Scanner entradaTeclado = new Scanner(System.in);
         do{
@@ -25,14 +31,25 @@ public class Pedidos {
             switch(decision){
                 case 1: //agregar cliente
                 Cliente nuevoCliente = new Cliente();
+                //ejemplo de acceso a un elemento publico
+                //tambien es un ejemplo de metodo de instancia
+                nuevoCliente.getCodigoCliente();
+                /* ejemplo de la prohibicion de acceso a un metodo privado
+                debe generarse un error al tratar de asignar de manera directa el nombre 
+                del cliente. Se verifica en tiempo de interpretacion
+                */
+                //nuevoCliente.nombreCliente = "esto es una prueba";
                 break;
-                
-
+        
                 case 2: //agregar producto
                 //POR HACER: EVALUAR EL MEJOR MECANISMO PARA CAPTURAR DATOS
                 //Y CREAR INSTANCIA DE CADA CLASE
                 Menu nuevoMenu = new Menu();
-                nuevoMenu.capturardatos();
+                Pastas nuevaPasta = new Pastas();
+                //Pizza nuevaPizza = new Pizza();
+                /* se necesita un nuevo mecanismo
+                para preguntarle al usuario que tipo de especialidad
+                necesita registrar */
                 break;
 
                 case 3: //agregar pedido
@@ -45,7 +62,7 @@ public class Pedidos {
                  
             }
 
-            System.out.println("Si desea continuar escriba continuar: ");
+            System.out.println("Si desea continuar utilizado el programa escriba continuar: ");
             String decidir = entradaTeclado.nextLine();
             /*
             intepretacion de la linea 55:
