@@ -16,6 +16,7 @@ public class Cliente {
     private String telMovilCliente;
 
     public Cliente(int codigoCliente, String nombreCliente, String apellidosCliente, String telMovilCliente) {
+        //este constructor no cumple con POO, debe recodificarse, tomar de base la Clase Pastas
         this.codigoCliente = codigoCliente;
         this.nombreCliente = nombreCliente;
         this.apellidosCliente = apellidosCliente;
