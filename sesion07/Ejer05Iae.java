@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class Ejer05Iae {
     public static void main(String[] args) {
         String cont = "y";
-        run(cont);
+        ejecutar(cont);
     }
-    static void run(String cont) {
+    static void ejecutar(String cont) {
         Scanner scan = new Scanner(System.in);
         while( cont.equalsIgnoreCase("y")) {
            try {
@@ -20,7 +20,7 @@ public class Ejer05Iae {
                System.out.println("Valor fuera de rango, digite S para continuar");
                cont = scan.next();  
                if(cont.equalsIgnoreCase("S"))
-                   run(cont);
+                   ejecutar(cont);
                }
           }
      }

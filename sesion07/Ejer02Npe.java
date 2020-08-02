@@ -13,14 +13,14 @@ class Ejer02Npe
         String ptr = null; 
   
         //iniciar un proceso de monitoreo para saber si prt es nulo. 
-        //tr = "gfg";
+        //ptr = "gfg";
         try
         { 
             //debe verificarse como se realiza la evaluacion
             if (ptr.equals("gfg")) 
-                System.out.print("dato correcto"); 
+                System.out.println("dato correcto"); 
             else 
-                System.out.print("dato equivocado"); 
+                System.out.println("dato equivocado"); 
         } 
         catch(NullPointerException pilaError) 
         { 

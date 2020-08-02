@@ -15,9 +15,10 @@ class Ejer03Npe
 		{ 
 			System.out.println(getLength(s)); 
 		} 
-		catch(IllegalArgumentException e) 
+		catch(Exception monitorError) 
 		{ 
-			System.out.println("IllegalArgumentException detectada"); 
+			System.out.println("Un error ha sido detectado"); 
+			monitorError.printStackTrace();
 		} 
 
 		// se agrega datos a la misma variable
@@ -37,9 +38,16 @@ class Ejer03Npe
 		{ 
 			System.out.println(getLength(s)); 
 		} 
+		/*
+		catch(Exception error) 
+		{ 
+			System.out.println("Un error ha sido detectado"); 
+			error.printStackTrace();
+		} 
+		*/
 		catch(IllegalArgumentException e) 
 		{ 
-			System.out.println("IllegalArgumentException detectada"); 
+			System.out.println("El programa genero un error, favor reinicie"); 
 			e.printStackTrace();
 		} 
 	} 

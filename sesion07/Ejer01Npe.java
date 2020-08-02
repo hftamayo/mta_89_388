@@ -28,8 +28,7 @@ class GenerarToken
         if (nuevoToken == null) 
             nuevoToken = new GenerarToken(); 
         return nuevoToken; 
-        
-        //return null;
+        //quitar comentario para dispara la excepcion NPE: return null;
     } 
   
     public String getCodigoToken() 
