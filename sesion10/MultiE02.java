@@ -1,3 +1,4 @@
+package sesion10;
 
 class MultiE02 { 
     public static void main(String[] args) 
